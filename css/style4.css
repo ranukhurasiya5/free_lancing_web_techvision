@@ -1,0 +1,300 @@
+/* Common settings */
+a {
+    text-decoration: none;
+    color: #fff; /* White text for better contrast on dark backgrounds */
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #fff; /* White color on hover for consistency */
+    text-decoration: none;
+}
+
+.section {
+    padding: 80px 0;
+}
+
+.section h2.section-head {
+    color:black; /* White text */
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-size: 2.5rem;
+    position: relative;
+}
+
+.section h2.section-head::after {
+    background:black; /* White underline */
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    margin: 20px auto;
+    border-radius: 3px;
+}
+
+/* Header */
+#header {
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)); /* Black gradient */
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
+}
+
+#logo {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #fff; /* White logo text */
+}
+
+#menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu li {
+    display: inline-block;
+}
+
+#menu li a {
+    color: #fff;
+    padding: 15px 20px;
+    display: block;
+    font-weight: 600;
+}
+
+#menu li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+}
+
+/* Banner */
+#banner {
+    background: url('../images/pic1.jpg') no-repeat center center/cover;
+    height: 650px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.banner-title {
+    max-width: 700px;
+    background: rgba(0, 0, 0, 0.7); /* Dark background */
+    padding: 40px;
+    border-radius: 12px;
+    backdrop-filter: blur(5px); /* Blurred effect */
+}
+
+.banner-title h1 {
+    margin: 0 0 20px;
+    font-size: 3.5rem;
+    color: #fff; /* White color for the heading */
+}
+
+.banner-title p.lead {
+    font-size: 1.5rem;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* Services */
+.service-box {
+    text-align: center;
+    padding: 40px 20px;
+    background: rgba(0, 0, 0, 0.5); /* Blurred black background */
+    margin-bottom: 30px;
+    border-radius: 12px;
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.service-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.service-box i.fa {
+    color: #fff; /* White icons */
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+/* Testimonials */
+#testimonials {
+    background: url('../images/pic 2.jpg') no-repeat center center/cover;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+}
+
+#testimonials::before {
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.testimonial {
+    text-align: center;
+    padding: 30px;
+}
+
+.testimonial img {
+    border-radius: 50%;
+    margin-bottom: 15px;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+/* News */
+.new-post {
+    background: rgba(0, 0, 0, 0.5); /* Black background */
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.new-post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.new-post img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.new-post h3 a {
+    color: #fff; /* White text for the title */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.post-date {
+    font-size: 13px;
+    color: #fff; /* White date text */
+}
+
+a.readmore {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+}
+
+a.readmore:hover {
+    color: #fff;
+}
+
+/* Footer */
+#footer-sidebar {
+    background: rgba(0, 0, 0, 0.8); /* Blurred black background */
+    backdrop-filter: blur(10px);
+    color: #fff;
+    padding: 50px 0;
+}
+
+.footer-widget h4 {
+    font-weight: bold;
+}
+
+.footer-widget h4::after {
+    content: "";
+    background: #fff; /* White underline */
+    display: block;
+    width: 50px;
+    height: 3px;
+    margin: 8px 0;
+}
+
+.footer-widget a {
+    color: #fff;
+}
+
+.footer-widget a:hover {
+    color: #fff;
+}
+
+.latest-news {
+    list-style: none;
+    padding: 0;
+}
+
+.latest-news li {
+    margin-bottom: 10px;
+}
+
+.latest-news li::before {
+    content: "\f101";
+    font-family: FontAwesome;
+    padding-right: 5px;
+}
+
+/* Final Footer */
+#footer {
+    background: #263238; /* Dark grayish-black */
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+#social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+#social-icons li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+#social-icons li a {
+    color: #fff; /* White color for social icons */
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+#social-icons li a:hover {
+    color: #fff;
+}
+
+/* Utilities */
+.no-underline {
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+  
+/* 
+  .carousel-caption h1 {
+    background: rgba(0, 0, 0, 0.6);
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.carousel-caption p {
+    background: rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 8px;
+    color: #000;
+} */
+
